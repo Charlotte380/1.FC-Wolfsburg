@@ -154,3 +154,66 @@ nav a {
   .footer-links a:hover{
     color: #fff;
   }
+
+  @media screen and (max-width: 768px) {
+    header,
+    footer{
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .intro,
+    .info-section,
+    .info-box,
+    .info-box wide,
+    .map-section,
+    .team-image,
+    .team-info-grid,
+    .team-box {
+      width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+  
+    .info-grid,
+    .team-info-grid,
+    .info-section,
+    .info-section .info-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .map-section iframe {
+      width: 100% !important;
+      height: 250px;
+      border-radius: 10px;
+    }
+  
+    .team-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .info-box,
+    .info-box wide {
+      text-align: center;
+    }
+  
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  }
